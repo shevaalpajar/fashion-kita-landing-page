@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BVTSP9WR99"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BVTSP9WR99');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thrifty - Tampil Percaya Diri Setiap Hari</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-xh6p3h+...=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Mouse Trail -->
+  <div id="mouse-trail"></div>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="loading-logo">Thrifty</div>
+      <div class="loading-spinner"></div>
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Kembali ke atas">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/6282282695006" id="floating-whatsapp" target="_blank" title="Chat via WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <div id="star-container"></div>
+      <div class="logo">Thrifty</div>
+      <div class="nav-right">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#koleksi">Koleksi</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Background Slideshow -->
+    <div class="hero-backgrounds">
+      <div class="bg-slide active" style="background-image: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 50%, rgba(240, 147, 251, 0.8) 100%), url('img/bg.jpg');"></div>
+      <div class="bg-slide" style="background-image: linear-gradient(135deg, rgba(255, 107, 107, 0.8) 0%, rgba(238, 90, 36, 0.8) 50%, rgba(255, 138, 128, 0.8) 100%), url('img/hero1.jpg');"></div>
+      <div class="bg-slide" style="background-image: linear-gradient(135deg, rgba(79, 172, 254, 0.8) 0%, rgba(0, 242, 254, 0.8) 50%, rgba(67, 233, 123, 0.8) 100%), url('img/hero2.png');"></div>
+      <div class="bg-slide" style="background-image: linear-gradient(135deg, rgba(255, 193, 7, 0.8) 0%, rgba(255, 152, 0, 0.8) 50%, rgba(255, 87, 34, 0.8) 100%), url('img/bg.jpg');"></div>
+      <div class="bg-slide" style="background-image: linear-gradient(135deg, rgba(156, 39, 176, 0.8) 0%, rgba(233, 30, 99, 0.8) 50%, rgba(244, 67, 54, 0.8) 100%), url('img/hero1.jpg');"></div>
+      <div class="bg-slide" style="background-image: linear-gradient(135deg, rgba(0, 150, 136, 0.8) 0%, rgba(0, 188, 212, 0.8) 50%, rgba(3, 169, 244, 0.8) 100%), url('img/hero2.png');"></div>
+      <div class="bg-slide" style="background-image: linear-gradient(135deg, rgba(76, 175, 80, 0.8) 0%, rgba(139, 195, 74, 0.8) 50%, rgba(205, 220, 57, 0.8) 100%), url('img/bg.jpg');"></div>
+      <div class="bg-slide" style="background-image: linear-gradient(135deg, rgba(250, 112, 154, 0.8) 0%, rgba(254, 225, 64, 0.8) 50%, rgba(255, 154, 158, 0.8) 100%), url('img/hero1.jpg');"></div>
+    </div>
+
+    <!-- Background Navigation Dots -->
+    <div class="bg-dots">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+      <span class="dot" data-slide="3"></span>
+      <span class="dot" data-slide="4"></span>
+      <span class="dot" data-slide="5"></span>
+      <span class="dot" data-slide="6"></span>
+      <span class="dot" data-slide="7"></span>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="typing-text">Tampil Percaya Diri Setiap Hari</h1>
+        <p class="fade-in-text">Dari outfit kasual ke semi-formal, kami punya semua yang kamu cari dengan kualitas terbaik dan harga terjangkau.</p>
+        <a href="https://wa.me/6282282695006" class="cta-button pulse-button" target="_blank">
+          <i class="fab fa-whatsapp"></i> Order via WhatsApp
+        </a>
+      </div>
+      <div class="hero-image">
+        <img src="img/bg.jpg" alt="Model Fashion" class="floating-image" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sale Section -->
+    <section id="sale-section" class="sale-section">
+      <div class="marquee-container">
+          <div class="marquee">
+              <span>SALE</span>
+              <span class="outline">UP TO 50% OFF</span>
+              <span>THRIFT STORE</span>
+              <span class="outline">FLASH SALE</span>
+              <span>LIMITED TIME</span>
+          </div>
+          <div class="marquee marquee2">
+              <span>SALE</span>
+              <span class="outline">UP TO 50% OFF</span>
+              <span>THRIFT STORE</span>
+              <span class="outline">FLASH SALE</span>
+              <span>LIMITED TIME</span>
+          </div>
+      </div>
+      <div class="sale-content">
+        <div class="sale-text">
+          <span class="thrift-store-label">Thrift Store</span>
+          <h2>SALE</h2>
+          <p>UP TO 50% OFF</p>
+        </div>
+        <a href="#koleksi" class="shop-now-btn">Shop now</a>
+      </div>
+    </section>
+
+    <section class="produk-section" id="koleksi">
+      <h2 class="section-title">Koleksi Terbaru</h2>
+      <div class="produk-slider">
+
+        <div class="produk-card" data-aos="fade-up">
+          <div class="card-badge">Terlaris</div>
+          <img src="image/niketech.png" alt="Nike Tech" class="product-image">
+          <p class="produk-nama">Jaket Nike Tech</p>
+          <p class="produk-harga">Rp1.599.000</p>
+          <div class="produk-sosmed">
+            <a href="https://wa.me/6282282695006" target="_blank" title="Order via WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/she_vaal" target="_blank" title="Lihat di Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/fashionkita" target="_blank" title="Kunjungi Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-badge">Baru</div>
+          <img src="image/MLB CAAP.webp" alt="Topi New Era mlb" class="product-image">
+          <p class="produk-nama">Topi New Era MLB</p>
+          <p class="produk-harga">Rp549.000</p>
+          <div class="produk-sosmed">
+            <a href="https://wa.me/6282282695006" target="_blank" title="Order via WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/she_vaal" target="_blank" title="Lihat di Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/fashionkita" target="_blank" title="Kunjungi Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="image/tnf jc.webp" alt="The North Face Kids Reversible Jacket" class="product-image">
+          <p class="produk-nama">The North Face Kids Reversible Jacket</p>
+          <p class="produk-harga">Rp1.200.000</p>
+          <div class="produk-sosmed">
+            <a href="https://wa.me/6282282695006" target="_blank" title="Order via WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/she_vaal" target="_blank" title="Lihat di Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/fashionkita" target="_blank" title="Kunjungi Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="image/tnfmt.jpg" alt="TNF Manton Parka Hooded Jacket" class="product-image">
+          <p class="produk-nama">TNF Manton Parka Hooded Jacket</p>
+          <p class="produk-harga">Rp1.199.000</p>
+          <div class="produk-sosmed">
+            <a href="https://wa.me/6282282695006" target="_blank" title="Order via WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/she_vaal" target="_blank" title="Lihat di Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/fashionkita" target="_blank" title="Kunjungi Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="card-badge">Premium</div>
+          <img src="image/stoneisl.jfif" alt="STONE ISLAND JACKET NAVY" class="product-image">
+          <p class="produk-nama">STONE ISLAND JACKET NAVY</p>
+          <p class="produk-harga">Rp2.259.000</p>
+          <div class="produk-sosmed">
+            <a href="https://wa.me/6282282695006" target="_blank" title="Order via WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/she_vaal" target="_blank" title="Lihat di Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/fashionkita" target="_blank" title="Kunjungi Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-aos="fade-up" data-aos-delay="500">
+          <img src="image/Carhartt-Extremes-Reg-Force-Bib-Overalls.avif" alt="Carhartt Bib Overalls" class="product-image">
+          <p class="produk-nama">Carhartt Bib Overalls</p>
+          <p class="produk-harga">Rp1.179.000</p>
+          <div class="produk-sosmed">
+            <a href="https://wa.me/6282282695006" target="_blank" title="Order via WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/she_vaal" target="_blank" title="Lihat di Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/fashionkita" target="_blank" title="Kunjungi Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="tentang-section" id="tentang">
+      <h2 class="section-title">Tentang Kami</h2>
+      <div class="stats-container">
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+          <div class="stat-number" data-target="500">0</div>
+          <div class="stat-label">Pelanggan Puas</div>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+          <div class="stat-number" data-target="1000">0</div>
+          <div class="stat-label">Produk Terjual</div>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+          <div class="stat-number" data-target="50">0</div>
+          <div class="stat-label">Brand Ternama</div>
+        </div>
+      </div>
+      <p class="fade-in-text">
+        Thrifty adalah toko pakaian terpercaya yang menghadirkan gaya kasual hingga semi-formal dengan harga terjangkau.
+        Kami percaya bahwa semua orang bisa tampil percaya diri setiap hari dengan pakaian yang tepat dan berkualitas.
+        Dengan koleksi terbaru dari brand-brand ternama, kami siap membantu Anda menemukan style yang sempurna.
+      </p>
+    </section>
+
+    <section class="kontak-section" id="kontak">
+      <h2 class="section-title">Hubungi Kami</h2>
+      <p><i class="fas fa-envelope"></i> Email: sheva283@thrifty.com</p>
+      <p><i class="fas fa-phone"></i> Telepon: 0822-8269-5006</p>
+      <div class="sosmed">
+        <a href="https://www.instagram.com/she_vaal" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/fashionkita" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/6282262506456" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Thrifty. Semua hak dilindungi.</p>
+    </footer>
+  </main>
+
+<script>
+  // Background Slideshow
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.bg-slide');
+  const dots = document.querySelectorAll('.dot');
+  const totalSlides = slides.length;
+  let slideInterval;
+
+  function showSlide(index) {
+    // Remove active class from all slides and dots
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // Add active class to current slide and dot
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+    
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    const next = (currentSlide + 1) % totalSlides;
+    showSlide(next);
+  }
+
+  function startSlideshow() {
+    slideInterval = setInterval(nextSlide, 5000); // Change every 5 seconds
+  }
+
+  function stopSlideshow() {
+    clearInterval(slideInterval);
+  }
+
+  // Initialize slideshow
+  startSlideshow();
+
+  // Add click events to dots
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      stopSlideshow();
+      showSlide(index);
+      startSlideshow(); // Restart the interval
+    });
+  });
+
+  // Pause slideshow on hover (optional)
+  const hero = document.querySelector('.hero');
+  hero.addEventListener('mouseenter', stopSlideshow);
+  hero.addEventListener('mouseleave', startSlideshow);
+
+  // Add keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      stopSlideshow();
+      const prev = (currentSlide - 1 + totalSlides) % totalSlides;
+      showSlide(prev);
+      startSlideshow();
+    } else if (e.key === 'ArrowRight') {
+      stopSlideshow();
+      const next = (currentSlide + 1) % totalSlides;
+      showSlide(next);
+      startSlideshow();
+    }
+  });
+
+  // Add swipe support for mobile
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  hero.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  hero.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  });
+
+  function handleSwipe() {
+    const swipeThreshold = 50;
+    const diff = touchStartX - touchEndX;
+
+    if (Math.abs(diff) > swipeThreshold) {
+      stopSlideshow();
+      if (diff > 0) {
+        // Swipe left - next slide
+        const next = (currentSlide + 1) % totalSlides;
+        showSlide(next);
+      } else {
+        // Swipe right - previous slide
+        const prev = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(prev);
+      }
+      startSlideshow();
+    }
+  }
+
+  // Scroll Progress Bar
+  window.addEventListener('scroll', function() {
+    const scrollProgress = document.getElementById('scroll-progress');
+    const scrollTop = window.pageYOffset;
+    const docHeight = document.body.offsetHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    scrollProgress.style.width = scrollPercent + '%';
+  });
+
+  // Back to Top Button
+  const backToTopBtn = document.getElementById('back-to-top');
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+      backToTopBtn.classList.add('show');
+    } else {
+      backToTopBtn.classList.remove('show');
+    }
+  });
+
+  backToTopBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  // Mouse Trail Effect
+  const mouseTrail = document.getElementById('mouse-trail');
+  let mouseX = 0, mouseY = 0;
+  let trailX = 0, trailY = 0;
+
+  document.addEventListener('mousemove', function(e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  function updateMouseTrail() {
+    trailX += (mouseX - trailX) * 0.1;
+    trailY += (mouseY - trailY) * 0.1;
+    
+    mouseTrail.style.left = trailX + 'px';
+    mouseTrail.style.top = trailY + 'px';
+    
+    requestAnimationFrame(updateMouseTrail);
+  }
+
+  // Particle Background Effect
+  function createParticles() {
+    const particlesContainer = document.getElementById('particles-js');
+    if (!particlesContainer) return; // Guard clause
+    const particleCount = 50;
+
+    for (let i = 0; i < particleCount; i++) {
+      const particle = document.createElement('div');
+      particle.style.position = 'absolute';
+      particle.style.width = Math.random() * 4 + 2 + 'px';
+      particle.style.height = particle.style.width;
+      particle.style.background = 'rgba(102, 126, 234, 0.3)';
+      particle.style.borderRadius = '50%';
+      particle.style.left = Math.random() * 100 + '%';
+      particle.style.top = Math.random() * 100 + '%';
+      particle.style.animation = `float ${Math.random() * 10 + 5}s ease-in-out infinite`;
+      particle.style.animationDelay = Math.random() * 5 + 's';
+      
+      particlesContainer.appendChild(particle);
+    }
+  }
+
+  // Notification System (REMOVED)
+  /*
+  function showNotification(message, type = 'success') {
+    const toast = document.getElementById('notification-toast');
+    const toastContent = toast.querySelector('span');
+    
+    toastContent.textContent = message;
+    toast.classList.add('show');
+    
+    setTimeout(() => {
+      toast.classList.remove('show');
+    }, 3000);
+  }
+  */
+
+  // Mobile Menu Toggle
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+  const icon = menuToggle.querySelector('i');
+
+  menuToggle.onclick = () => {
+    navLinks.classList.toggle('active');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-xmark');
+  };
+
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+
+      // Simple scroll for non-nav-links (e.g., promo button)
+      if (!this.closest('.nav-links')) {
+        if(targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        return;
+      }
+      
+      // Page transition for nav-links
+      if (targetElement) {
+        document.body.classList.add('is-navigating');
+
+        setTimeout(() => {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          
+          // Allow content to become visible again
+          setTimeout(() => {
+            document.body.classList.remove('is-navigating');
+          }, 500); // Should be longer than fade-out time
+
+        }, 400); // This should match the CSS transition time for opacity
+      }
+    });
+  });
+
+  // Typing Animation
+  function typeWriter(element, text, speed = 100) {
+    let i = 0;
+    element.innerHTML = '';
+    function type() {
+      if (i < text.length) {
+        element.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, speed);
+      }
+    }
+    type();
+  }
+
+  // Counter Animation
+  function animateCounter(element, target, duration = 2000) {
+    let start = 0;
+    const increment = target / (duration / 16);
+    
+    function updateCounter() {
+      start += increment;
+      if (start < target) {
+        element.textContent = Math.floor(start);
+        requestAnimationFrame(updateCounter);
+      } else {
+        element.textContent = target;
+      }
+    }
+    updateCounter();
+  }
+
+  // Intersection Observer for animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const animationObserver = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      // If element is in view, add 'animate' class
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        
+        // Special handling for stat counters to only run once
+        if (entry.target.classList.contains('stat-number') && !entry.target.classList.contains('has-animated')) {
+          const target = parseInt(entry.target.getAttribute('data-target'));
+          animateCounter(entry.target, target);
+          entry.target.classList.add('has-animated'); // Mark as animated
+        }
+      } 
+      // If element is out of view, remove 'animate' class to allow re-animation
+      else {
+        // Do not remove from counters to prevent re-counting
+        if (!entry.target.classList.contains('stat-number')) {
+            entry.target.classList.remove('animate');
+        }
+      }
+    });
+  }, observerOptions);
+
+  // Observe elements
+  document.querySelectorAll('[data-aos]').forEach(el => {
+    animationObserver.observe(el);
+  });
+
+  document.querySelectorAll('.stat-number').forEach(el => {
+    animationObserver.observe(el);
+  });
+
+  // Parallax Effect for Hero Image
+  window.addEventListener('scroll', function() {
+    const scrolled = window.pageYOffset;
+    const heroImage = document.querySelector('.floating-image');
+    if (heroImage) {
+      heroImage.style.transform = `translateY(${scrolled * 0.5}px)`;
+    }
+  });
+
+  // Product Card Hover Effects
+  document.querySelectorAll('.produk-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-15px) scale(1.02)';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateY(0) scale(1)';
+    });
+
+    // Add click event for notification (REMOVED)
+    /*
+    card.addEventListener('click', function() {
+      const productName = this.querySelector('.produk-nama').textContent;
+      showNotification(`Produk ${productName} berhasil ditambahkan ke keranjang!`);
+    });
+    */
+  });
+
+  // Floating WhatsApp Button Pulse
+  const floatingWhatsApp = document.getElementById('floating-whatsapp');
+  setInterval(() => {
+    floatingWhatsApp.classList.add('pulse');
+    setTimeout(() => {
+      floatingWhatsApp.classList.remove('pulse');
+    }, 1000);
+  }, 3000);
+
+  // Add ripple effect to buttons
+  function createRipple(event) {
+    const button = event.currentTarget;
+    const ripple = document.createElement('span');
+    const rect = button.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    const x = event.clientX - rect.left - size / 2;
+    const y = event.clientY - rect.top - size / 2;
+    
+    ripple.style.width = ripple.style.height = size + 'px';
+    ripple.style.left = x + 'px';
+    ripple.style.top = y + 'px';
+    ripple.classList.add('ripple');
+    
+    button.appendChild(ripple);
+    
+    setTimeout(() => {
+      ripple.remove();
+    }, 600);
+  }
+
+  document.querySelectorAll('.cta-button, .produk-sosmed a, .sosmed a').forEach(button => {
+    button.addEventListener('click', createRipple);
+  });
+
+  // Text Scramble Effect
+  class TextScramble {
+    constructor(el) {
+      this.el = el;
+      this.chars = '!<>-_\\/[]{}—=+*^?#________';
+      this.update = this.update.bind(this);
+    }
+    
+    setText(newText) {
+      const oldText = this.el.innerText;
+      const length = Math.max(oldText.length, newText.length);
+      const promise = new Promise((resolve) => this.resolve = resolve);
+      this.queue = [];
+      
+      for (let i = 0; i < length; i++) {
+        const from = oldText[i] || '';
+        const to = newText[i] || '';
+        const start = Math.floor(Math.random() * 40);
+        const end = start + Math.floor(Math.random() * 40);
+        this.queue.push({ from, to, start, end });
+      }
+      
+      cancelAnimationFrame(this.frameRequest);
+      this.frame = 0;
+      this.update();
+      return promise;
+    }
+    
+    update() {
+      let output = '';
+      let complete = 0;
+      
+      for (let i = 0, n = this.queue.length; i < n; i++) {
+        let { from, to, start, end, char } = this.queue[i];
+        
+        if (this.frame >= end) {
+          complete++;
+          output += to;
+        } else if (this.frame >= start) {
+          if (!char || Math.random() < 0.28) {
+            char = this.randomChar();
+            this.queue[i].char = char;
+          }
+          output += `<span class="dud">${char}</span>`;
+        } else {
+          output += from;
+        }
+      }
+      
+      this.el.innerHTML = output;
+      
+      if (complete === this.queue.length) {
+        this.resolve();
+      } else {
+        this.frameRequest = requestAnimationFrame(this.update);
+        this.frame++;
+      }
+    }
+    
+    randomChar() {
+      return this.chars[Math.floor(Math.random() * this.chars.length)];
+    }
+  }
+
+  // Magnetic Effect for Buttons
+  document.querySelectorAll('.cta-button, .produk-sosmed a, .sosmed a').forEach(button => {
+    button.addEventListener('mousemove', function(e) {
+      const rect = this.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      
+      this.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+    });
+    
+    button.addEventListener('mouseleave', function() {
+      this.style.transform = 'translate(0, 0)';
+    });
+  });
+
+  // Smooth reveal animation for sections - THIS IS NOW HANDLED BY THE MAIN OBSERVER
+  /*
+  const revealSections = document.querySelectorAll('section');
+  
+  const revealSection = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  };
+
+  const sectionObserver = new IntersectionObserver(revealSection, {
+    root: null,
+    threshold: 0.15,
+  });
+
+  revealSections.forEach(section => {
+    section.style.opacity = '0';
+    section.style.transform = 'translateY(80px)';
+    section.style.transition = 'all 0.8s ease';
+    sectionObserver.observe(section);
+  });
+  */
+
+  // Add some random animations to stats
+  setInterval(() => {
+    const stats = document.querySelectorAll('.stat-item');
+    const randomStat = stats[Math.floor(Math.random() * stats.length)];
+    randomStat.style.transform = 'scale(1.05)';
+    setTimeout(() => {
+      randomStat.style.transform = 'scale(1)';
+    }, 200);
+  }, 5000);
+
+  // Easter egg: Konami code
+  let konamiCode = [];
+  const konamiSequence = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]; // ↑↑↓↓←→←→BA
+  
+  document.addEventListener('keydown', function(e) {
+    konamiCode.push(e.keyCode);
+    if (konamiCode.length > konamiSequence.length) {
+      konamiCode.shift();
+    }
+    
+    if (konamiCode.join(',') === konamiSequence.join(',')) {
+      document.body.style.animation = 'rainbow 2s infinite';
+      // showNotification('Easter egg ditemukan! 🎉'); // Notification function removed
+      alert('Easter egg ditemukan! 🎉'); // Replaced with a simple alert
+      setTimeout(() => {
+        document.body.style.animation = '';
+      }, 5000);
+    }
+  });
+
+  // Add rainbow animation for easter egg
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes rainbow {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+  `;
+  document.head.appendChild(style);
+
+  // SCRIPT INITIALIZATION
+  // Functions that can run when the DOM is ready (visual effects)
+  document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) { // Add .scrolled class after 50px of scroll
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    }
+
+    createParticles();
+    updateMouseTrail();
+    createStars(); // Moved here to ensure the container exists
+  });
+
+  // Functions that should run after all content (including images) is loaded
+  window.addEventListener('load', function() {
+    // Hide Loading Screen
+    const loadingScreen = document.getElementById('loading-screen');
+    if (loadingScreen) {
+      setTimeout(() => {
+        loadingScreen.style.opacity = '0';
+        setTimeout(() => {
+          loadingScreen.style.display = 'none';
+        }, 500);
+      }, 1000); // A small delay to ensure content is visible
+    }
+
+    // Initialize Text Scramble / Typing Effect
+    const el = document.querySelector('.typing-text');
+    if (el) {
+      const phrases = ['Tampil Percaya Diri', 'Style yang Menarik', 'Fashion Terbaik'];
+      const fx = new TextScramble(el);
+      let counter = 0;
+      const next = () => {
+        fx.setText(phrases[counter]).then(() => {
+          setTimeout(next, 2800); // Cycle through phrases
+        });
+        counter = (counter + 1) % phrases.length;
+      };
+      setTimeout(next, 1500); // Start after a delay
+    }
+  });
+
+  // Galaxy animation on Navbar
+  function createStars() {
+    const container = document.getElementById('star-container');
+    if (!container) return;
+    const numberOfStars = 50;
+
+    for (let i = 0; i < numberOfStars; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      
+      const size = Math.random() * 3 + 1;
+      star.style.width = size + 'px';
+      star.style.height = size + 'px';
+      star.style.top = Math.random() * 100 + '%';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.animationDuration = (Math.random() * 3 + 2) + 's';
+      star.style.animationDelay = Math.random() * 5 + 's';
+      
+      container.appendChild(star);
+    }
+  }
+
+  // Theme Toggle
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+  const themeIcon = themeToggle.querySelector('i');
+
+  // Function to apply the saved theme
+  const applyTheme = (theme) => {
+    if (theme === 'dark') {
+      body.classList.add('dark-mode');
+      themeIcon.classList.remove('fa-moon');
+      themeIcon.classList.add('fa-sun');
+    } else {
+      body.classList.remove('dark-mode');
+      themeIcon.classList.remove('fa-sun');
+      themeIcon.classList.add('fa-moon');
+    }
+  };
+  
+  // Check for saved theme in localStorage
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    applyTheme(savedTheme);
+  } else {
+    // On first visit, default to dark mode
+    applyTheme('dark');
+    localStorage.setItem('theme', 'dark');
+  }
+
+  themeToggle.addEventListener('click', () => {
+    if (body.classList.contains('dark-mode')) {
+      // Switch to light mode
+      applyTheme('light');
+      localStorage.setItem('theme', 'light');
+    } else {
+      // Switch to dark mode
+      applyTheme('dark');
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+</script>
+</body>
+</html>
